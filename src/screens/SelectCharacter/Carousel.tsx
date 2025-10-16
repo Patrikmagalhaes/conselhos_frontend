@@ -1,13 +1,13 @@
-import { ContainerLapide } from "./styles"
+import { BorderUpLapide, ContainerLapide } from "./styles"
 
 function Carousel() {
     return (
         <>
             <ContainerLapide>
 
-                <div>
+                <BorderUpLapide >
                     <div></div>
-                </div>
+                </BorderUpLapide>
 
 
             </ContainerLapide>
