@@ -19,6 +19,7 @@ border-top-left-radius:20%;
 `
 
 export const BorderDown = styled.div`
+text-align: center;
 
 border: 10px solid black;
 width: 100%;

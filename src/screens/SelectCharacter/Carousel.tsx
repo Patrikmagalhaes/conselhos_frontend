@@ -8,7 +8,11 @@ function Carousel() {
                 <BorderUpLapide >
                     <img style={{ height: "100px" }} src="https://cdn.britannica.com/22/59822-050-98F24569/Karl-Marx-1870.jpg" alt="" />
                 </BorderUpLapide>
-                <BorderDown></BorderDown>
+                <BorderDown>
+                    <h1>Karl Maxs</h1>
+                    <p>1883-1883</p>
+
+                </BorderDown>
 
             </ContainerLapide>
         </>
