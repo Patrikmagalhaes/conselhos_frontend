@@ -1,4 +1,4 @@
-import { BorderUpLapide, ContainerLapide } from "./styles"
+import { BorderDown, BorderUpLapide, ContainerLapide } from "./styles"
 
 function Carousel() {
     return (
@@ -6,9 +6,9 @@ function Carousel() {
             <ContainerLapide>
 
                 <BorderUpLapide >
-                    <div></div>
+                    <img style={{ height: "100px" }} src="https://cdn.britannica.com/22/59822-050-98F24569/Karl-Marx-1870.jpg" alt="" />
                 </BorderUpLapide>
-
+                <BorderDown></BorderDown>
 
             </ContainerLapide>
         </>
