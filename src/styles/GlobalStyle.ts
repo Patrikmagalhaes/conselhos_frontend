@@ -11,8 +11,8 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #000000ff;
+    color: #ffffffff;
     line-height: 1.5;
   }
 

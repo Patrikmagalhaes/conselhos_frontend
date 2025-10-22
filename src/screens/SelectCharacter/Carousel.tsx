@@ -6,7 +6,7 @@ function Carousel() {
             <ContainerLapide>
 
                 <BorderUpLapide >
-                    <img style={{ height: "100px" }} src="https://cdn.britannica.com/22/59822-050-98F24569/Karl-Marx-1870.jpg" alt="" />
+                    <img style={{ height: "100%", padding:"20%" }} src="https://cdn.britannica.com/22/59822-050-98F24569/Karl-Marx-1870.jpg" alt="" />
                 </BorderUpLapide>
                 <BorderDown>
                     <h1>Karl Maxs</h1>
