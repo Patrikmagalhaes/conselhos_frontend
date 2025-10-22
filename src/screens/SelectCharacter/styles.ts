@@ -1,5 +1,13 @@
 import styled from "styled-components";
+export const ContainerCharacter = styled.div`
 
+background-image: url(/src/assets/images/background.png);
+background-position: center;
+
+width: 100vw;
+height: 100vh;
+
+` 
 export const ContainerLapide = styled.div`
 display: flex;
 align-items: center;

@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-
+import '/src/assets/fonts/metal-gothic-font/MetalGothic-DemoVersion-Regular-3a90.woff'
 export const GlobalStyle = createGlobalStyle`
   *,
   *::before,
@@ -9,8 +9,15 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
 
+
+@font-face {
+  font-family: "MetalGhotic";
+  src: url("./src/assets/fonts/metal-gothic-font/MetalGothic-DemoVersion-Regular-3a90.woff") format("woff");
+  font-weight: bold;
+}
+
   body {
-    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    font-family: MetalGhotic, sans-serif;
     background-color: #000000ff;
     color: #ffffffff;
     line-height: 1.5;
