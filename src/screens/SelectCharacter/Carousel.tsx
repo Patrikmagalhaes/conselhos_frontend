@@ -1,20 +1,38 @@
-import { BorderDown, BorderUpLapide, ContainerLapide } from "./styles"
+import { useEffect, useState } from "react"
+import { BorderDown, BorderUpLapide, ContainerCarousel, ContainerItem, ContainerLapide } from "./styles"
 
 function Carousel() {
+    const [datas, setDatas] = useState([])
+
+    useEffect(() => {
+
+        fetch("http://localhost:5173/src/assets/teste/teste.json")
+            .then((response) => response.json())
+            .then(data => setDatas(data))
+    }, [])
+
     return (
         <>
-            <ContainerLapide>
+            <ContainerCarousel>
+                {datas.map((item) => {
+                    const { data, nome, image } = item
 
-                <BorderUpLapide >
-                    <img style={{ height: "100%", padding:"20%" }} src="https://cdn.britannica.com/22/59822-050-98F24569/Karl-Marx-1870.jpg" alt="" />
-                </BorderUpLapide>
-                <BorderDown>
-                    <h1>Karl Maxs</h1>
-                    <p>1883-1883</p>
-
-                </BorderDown>
-
-            </ContainerLapide>
+                    return (
+                        <ContainerLapide>
+                            <ContainerItem>
+                                <BorderUpLapide>
+                                    <img style={{ width: "100%", height: "100%" }} src={image} />
+                                </BorderUpLapide>
+                                <BorderDown>
+                                    <h1>{nome}</h1>
+                                    <p>{data}</p>
+                                </BorderDown>
+                            </ContainerItem>
+                        </ContainerLapide>
+                    )
+                })
+                }
+            </ContainerCarousel>
         </>
     )
 }
