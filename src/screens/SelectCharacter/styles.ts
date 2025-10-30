@@ -7,7 +7,7 @@ background-position: center;
 background-size: cover;
 width: 100vw;
 height: 100vh;
-` 
+`
 export const ContainerCarousel = styled.div`
   display: grid;
   grid-auto-flow: column; /* 👈 os itens ficam lado a lado, como colunas */
@@ -16,10 +16,18 @@ export const ContainerCarousel = styled.div`
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   width: 100%;
+  cursor: grab;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
 
-@media (max-width: 768px) {
+
+  &::-webkit-scrollbar {
+   display:none;
+  }
+
+ @media (max-width: 768px) {
   grid-auto-columns: 100%;
-}
+ }
 
 
 `
@@ -27,7 +35,20 @@ export const ContainerCarousel = styled.div`
 export const ContainerItem = styled.div`
 display: flex;
 flex-direction: column;
+ cursor: grab;
+ 
+`
 
+export const ImageLapide = styled.img`
+width: 100%;
+height: 20%;
+
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  pointer-events: none;
+  border-top-right-radius:22%;
+  border-top-left-radius:25%;
 `
 
 export const ContainerLapide = styled.div`
