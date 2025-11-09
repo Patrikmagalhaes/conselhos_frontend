@@ -7,6 +7,9 @@ background-position: center;
 background-size: cover;
 width: 100vw;
 height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 `
 export const ContainerCarousel = styled.div`
@@ -17,7 +20,6 @@ export const ContainerCarousel = styled.div`
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   width: 100%;
-  height: 100%;
   max-height: 600px;
   cursor: grab;
   scroll-behavior: smooth;
@@ -40,12 +42,11 @@ display: flex;
 flex-direction: column;
 align-items: center;
  cursor: grab;
- height: 100%;
 `
 
 export const ImageLapide = styled.img`
 width: 100%;
-height: 20%;
+
 
   user-drag: none;
   -webkit-user-drag: none;
@@ -59,7 +60,6 @@ export const ContainerLapide = styled.div`
 display: flex;
 flex-direction: column;
 
-width: 100%
 `
 export const BorderUpLapide = styled.div`
 display: flex;
@@ -78,4 +78,8 @@ text-align: center;
 border: 1px solid #ffffffff;
 width: 80%;
 height: 20%;
+`
+export const OrnamentImage = styled.img`
+width: 100%;
+position: fixed;
 `
