@@ -25,6 +25,7 @@ export const ContainerCarousel = styled.div`
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
 
+  position:relative;
 
   &::-webkit-scrollbar {
    display:none;
@@ -42,6 +43,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
  cursor: grab;
+ 
 `
 
 export const ImageLapide = styled.img`
@@ -58,8 +60,8 @@ width: 100%;
 
 export const ContainerLapide = styled.div`
 display: flex;
-flex-direction: column;
-
+flex-direction: column; 
+height: fit-content;
 `
 export const BorderUpLapide = styled.div`
 display: flex;
@@ -82,4 +84,8 @@ height: 20%;
 export const OrnamentImage = styled.img`
 width: 100%;
 position: fixed;
+`
+export const ArrowImage = styled.img`
+position: fixed;
+top: 50%;
 `

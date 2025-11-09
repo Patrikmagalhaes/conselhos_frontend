@@ -1,9 +1,10 @@
 import { useEffect, useState, useRef } from "react"
-import { BorderDown, BorderUpLapide, ContainerCarousel, ContainerItem, ContainerLapide, ImageLapide } from "./styles"
+import { ArrowImage, BorderDown, BorderUpLapide, ContainerCarousel, ContainerItem, ContainerLapide, ImageLapide } from "./styles"
 
-function Carousel() {''
+function Carousel() {
+    ''
     const [datas, setDatas] = useState([])
-    const carousel = useRef<HTMLDivElement| null>(null)
+    const carousel = useRef<HTMLDivElement | null>(null)
     useEffect(() => {
 
         fetch("http://localhost:5173/src/assets/teste/teste.json")
@@ -11,19 +12,20 @@ function Carousel() {''
             .then(data => setDatas(data))
     }, [])
 
-    const handleLeftClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const handleLeftClick = (e: React.MouseEvent<HTMLImageElement>) => {
         e.preventDefault()
         console.log(carousel.current!.offsetWidth)
         carousel.current!.scrollLeft += carousel.current!.offsetWidth
     }
-    const handleRightClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const handleRightClick = (e: React.MouseEvent<HTMLImageElement>) => {
         e.preventDefault()
-       console.log(carousel.current!.offsetWidth)
-       carousel.current!.scrollLeft -= carousel.current!.offsetWidth
+        console.log(carousel.current!.offsetWidth)
+        carousel.current!.scrollLeft -= carousel.current!.offsetWidth
     }
     return (
         <>
             <ContainerCarousel ref={carousel}>
+                <ArrowImage onClick={handleLeftClick} style={{  transform: "rotate(180deg)" }} src="./src/assets/images/arrow.png" alt="Flecha Direita" />
                 {datas.map((item) => {
                     const { data, nome, image } = item
 
@@ -42,9 +44,10 @@ function Carousel() {''
                     )
                 })
                 }
+                <ArrowImage onClick={handleRightClick} style={{  right: "0" }} src="./src/assets/images/arrow.png" alt="Flecha Direita" />
             </ContainerCarousel>
-            <button onClick={handleLeftClick}>left</button>
-            <button onClick={handleRightClick}>right</button>
+
+
         </>
     )
 }
