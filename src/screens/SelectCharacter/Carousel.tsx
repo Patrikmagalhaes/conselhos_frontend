@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react"
 import { BorderDown, BorderUpLapide, ContainerCarousel, ContainerItem, ContainerLapide, ImageLapide } from "./styles"
 
-function Carousel() {
+function Carousel() {''
     const [datas, setDatas] = useState([])
     const carousel = useRef<HTMLDivElement| null>(null)
     useEffect(() => {

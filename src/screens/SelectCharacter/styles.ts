@@ -7,6 +7,7 @@ background-position: center;
 background-size: cover;
 width: 100vw;
 height: 100vh;
+
 `
 export const ContainerCarousel = styled.div`
   display: grid;
@@ -16,6 +17,8 @@ export const ContainerCarousel = styled.div`
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   width: 100%;
+  height: 100%;
+  max-height: 600px;
   cursor: grab;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
@@ -35,8 +38,9 @@ export const ContainerCarousel = styled.div`
 export const ContainerItem = styled.div`
 display: flex;
 flex-direction: column;
+align-items: center;
  cursor: grab;
- 
+ height: 100%;
 `
 
 export const ImageLapide = styled.img`
@@ -62,8 +66,8 @@ display: flex;
 align-items: center;
 justify-content: center;
 border: 1px solid #ffffffff;
-width: 100%;
-height: 80%;
+width: 70%;
+height: 60%;
 border-top-right-radius:22%;
 border-top-left-radius:25%;
 border-bottom: none;
@@ -71,8 +75,7 @@ border-bottom: none;
 
 export const BorderDown = styled.div`
 text-align: center;
-padding:2%;
 border: 1px solid #ffffffff;
-width: 100%;
+width: 80%;
 height: 20%;
 `

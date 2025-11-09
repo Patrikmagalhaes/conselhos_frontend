@@ -1,31 +1,31 @@
 [
     {
-        "image": "https://miro.medium.com/v2/resize:fit:1400/1*w4BFNHz8AfAHSnQBIlmB5g.jpeg",
-        "nome": "Karl",
-        "data": "1000-1000"
+        "image": "./src/assets/teste/marx.png",
+        "nome": "Karl teste",
+        "data": "1000-1000"  
     },
     {
-        "image": "https://miro.medium.com/v2/resize:fit:1400/1*w4BFNHz8AfAHSnQBIlmB5g.jpeg",
+        "image": "./src/assets/teste/marx.png",
         "nome": "Karl1",
         "data": "1000-1000"
     },
     {
-        "image": "https://miro.medium.com/v2/resize:fit:1400/1*w4BFNHz8AfAHSnQBIlmB5g.jpeg",
+        "image": "./src/assets/teste/marx.png",
         "nome": "Karl2",
         "data": "1000-1000"
     },
     {
-        "image": "https://miro.medium.com/v2/resize:fit:1400/1*w4BFNHz8AfAHSnQBIlmB5g.jpeg",
+        "image": "./src/assets/teste/marx.png",
         "nome": "Karl3",
         "data": "1000-1000"
     },
     {
-        "image": "https://miro.medium.com/v2/resize:fit:1400/1*w4BFNHz8AfAHSnQBIlmB5g.jpeg",
+        "image": "./src/assets/teste/marx.png",
         "nome": "Karl4",
         "data": "1000-1000"
     },
     {
-        "image": "https://miro.medium.com/v2/resize:fit:1400/1*w4BFNHz8AfAHSnQBIlmB5g.jpeg",
+        "image": "./src/assets/teste/marx.png",
         "nome": "Karl5",
         "data": "1000-1000"
     }
