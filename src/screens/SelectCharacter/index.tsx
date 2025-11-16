@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Carousel from "./Carousel"
 import { ContainerCharacter, OrnamentImage } from "./styles"
 
@@ -10,9 +11,9 @@ function SelectCharacter() {
                 <h2 style={{fontSize:"2rem", textAlign: "center", marginBottom:"10%"}}>Com quem deseja conversar?</h2>
                 <Carousel />
                 <OrnamentImage style={{bottom:"0"}} src="./src/assets/teste/ornament.png" />
-                <button>Conversar</button>
+             
+                <Link to={"/chat"}>Conversar</Link>
             </ContainerCharacter>
-
         </>
     )
 }
