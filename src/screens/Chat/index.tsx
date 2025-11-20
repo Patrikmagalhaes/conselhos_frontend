@@ -1,8 +1,15 @@
-import { Link } from "react-router-dom"
+import { Link, useSearchParams } from "react-router-dom"
 
 function Chat() {
+    const [params] = useSearchParams()
+    const personagem = params.get('personagem')
+
     return (
-<><Link to={"/"}>Voltar</Link></>
-)
+        <>
+            <Link to={"/"}>Voltar</Link>
+            <h1>Nome: {personagem}</h1>
+        </>
+
+    )
 }
 export default Chat

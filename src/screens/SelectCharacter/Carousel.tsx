@@ -1,7 +1,11 @@
 import { useEffect, useState, useRef } from "react"
 import { ArrowImage, BorderDown, BorderUpLapide, ContainerCarousel, ContainerItem, ContainerLapide, ImageLapide } from "./styles"
 
-function Carousel() {
+type CarouselProps = {
+    onSelect: (nome: string) => void
+}
+
+export const Carousel = ({ onSelect }: CarouselProps) => {
 
     const [datas, setDatas] = useState([])
     const carousel = useRef<HTMLDivElement | null>(null)
@@ -24,9 +28,6 @@ function Carousel() {
         carousel.current!.scrollLeft -= carousel.current!.offsetWidth
     }
 
-    const selecteCharacter = (nome: never) => {
-        console.log(nome)
-    }
     return (
         <>
             <ContainerCarousel ref={carousel} >
@@ -35,7 +36,7 @@ function Carousel() {
                     const { data, nome, image } = item
 
                     return (
-                        <ContainerLapide onClick={()=>selecteCharacter(nome)}>
+                        <ContainerLapide onClick={() => onSelect(nome)}>
                             <ContainerItem>
                                 <BorderUpLapide>
                                     <ImageLapide style={{ width: "100%", height: "100%" }} src={image} />
@@ -57,5 +58,3 @@ function Carousel() {
         </>
     )
 }
-
-export default Carousel
